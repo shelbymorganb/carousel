@@ -69,7 +69,19 @@
 
   font-size: 100px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+    }
+
+  #banner h2 {
+  color: #3399FF;  
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  font-size: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
     }
 
     #banner p {
