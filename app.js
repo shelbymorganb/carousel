@@ -1,4 +1,10 @@
-$('.fa fa-angle-right').click(function() {
+var main = function() {
+    
+    $('.dropdown-toggle').click( function() {
+    $('.dropdown-menu').toggle();
+});
+    
+    $('.arrow-next').click(function() {
         
         var currentSlide = $('.active-slide');
         var nextSlide = currentSlide.next();
@@ -19,7 +25,7 @@ $('.fa fa-angle-right').click(function() {
         nextDot.addClass('active-dot');
 });
     
-    $('.fa fa-angle-left').click( function() {
+    $('.arrow-prev').click( function() {
         
         var currentSlide = $('.active-Slide');
         var prevSlide = currentSlide.prev();
