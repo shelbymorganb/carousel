@@ -1,8 +1,5 @@
 # carousel
 
-simple carousel built with jQuery. 
+simple template with a carousel built with jQuery. 
 
 
-TODO
-
-* Icons are not showing
