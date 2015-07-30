@@ -1,68 +1,106 @@
 <!doctype html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <title>jQuery Carousel</title>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an outdated browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
   </head>
   <body>
 
-<!--Start Carousel-->
+<!-- Header -->
+    <div class="header">
+      <div class="container">
+        <a href="#" class="logo-icon">
+          <img src="images/logo.jpg">
+        </a>
 
-<div class="slider">
+<!-- Menu Bar -->
+        <ul class="menu">
+          <li><a href="#">This is a Link</a></li>
+          <li><a href="#">Another One</a></li>
+          <li><a href="#">One More</a></li>
 
-<!--First Slide -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+          <li><a href="#">This is a Link</a></li>
+          <li><a href="#">Another One</a></li>
+          <li><a href="#">One More</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<!-- Banner -->
+          <section id="banner">
+          <div class="container">
+              <h1>Welcome to <strong>Carousel</strong></h1>
+              <p>A free template created by <a href="http://shelbymorganbell.com">Shelby Morgan Bell</a> </p>
+              <ul class="actions">
+          </div>
+          </section>
+
+<!-- Slider -->
+    <div class="slider">
       <div class="slide active-slide">
         <div class="container">
           <div class="row">
             <div class="slide-copy col-xs-5">
-              <h1>Slide 1</h1>
-              <p>This is the first slide of my carousel</p>
+              <h1>Use these slides to show what's important to you</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="slide-img col-xs-7">
+              <img src="images/bigLogo.jpg" width="540px">
             </div>
           </div>
         </div>      
       </div>
-
-
-
-<!--Second Slide -->
-      <div class="slide">
+      
+      <div class="slide slide-feature">
         <div class="container">
           <div class="row">
-            <div class="slide-copy col-xs-5">
-              <h1>Slide 2</h1>
-              <p>This is the second slide of my carousel</p>
+            <div class="col-xs-12">
+            <h1>Images scale beautifully</h1>
+            <h2>perfect for showing off your portfolio</h2>
+              <a href="https://en.wikipedia.org/wiki/New_York_City">New York City, NY</a>
             </div>
+            
           </div>
         </div>      
       </div> 
 
-<!--Third Slide -->
       <div class="slide">
         <div class="container">
           <div class="row">
             <div class="slide-copy col-xs-5">
-              <h1>Slide 3</h1>
-              <p>This is the third slide of my carousel</p>
+              <h1>Turn your images into links!</h1>
+              <p>This one just goes to GitHub, but you can link to anywhere you'd like.</p>
+            </div>
+            <div class="slide-img col-xs-7">
+              <a href="https://www.github.com"> <img src="images/octocat.jpg" width="540px"> </a>
             </div>
           </div>
         </div>      
       </div> 
+    </div>
 
-</div>
-<!--End Carousel-->
 
+<!-- Slider Nav -->
     <div class="slider-nav">
-      <span class="fa-angle-left"></span>
+      <a href="#" class="arrow-prev"><img src="images/arrow-prev.jpg"></a>
       <ul class="slider-dots">
         <li class="dot active-dot">&bull;</li>
         <li class="dot">&bull;</li>
         <li class="dot">&bull;</li>
       </ul>
-      <span class="fa-angle-right"></span>
+      <a href="#" class="arrow-next"><img src="images/arrow-next.jpg"></a>
     </div> 
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
