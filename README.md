@@ -1,5 +1,3 @@
 # carousel
 
-simple template with a carousel built with jQuery. 
-
-
+simple one page website template with a carousel
