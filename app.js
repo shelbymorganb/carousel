@@ -1,8 +1,14 @@
 var main = function() {
-    
+
+
+//Dropdown Menu Toggle
+
     $('.dropdown-toggle').click( function() {
     $('.dropdown-menu').toggle();
-});
+    });
+
+
+//Slider Nav Arrows
     
     $('.arrow-next').click(function() {
         
@@ -12,7 +18,7 @@ var main = function() {
         var currentDot = $('.active-dot');
         var nextDot = currentDot.next();
         
-        if(nextSlide.length == 0) {
+        if(nextSlide.length === 0) {
             nextSlide = $('.slide').first();
             nextDot = $('.dot').first();
         }
@@ -20,14 +26,13 @@ var main = function() {
         currentSlide.fadeOut(600).removeClass('active-slide');
         nextSlide.fadeIn(600).addClass('active-slide');
         
-        
         currentDot.removeClass('active-dot');
         nextDot.addClass('active-dot');
-});
+    });
     
-    $('.arrow-prev').click( function() {
+    $('.arrow-prev').click(function() {
         
-        var currentSlide = $('.active-Slide');
+        var currentSlide = $('.active-slide');
         var prevSlide = currentSlide.prev();
        
         var currentDot = $('.active-dot');
@@ -35,7 +40,7 @@ var main = function() {
         
         if(prevSlide.length === 0) {
             prevSlide = $('.slide').last();
-            prevDot = $('.dot').last()
+            prevDot = $('.dot').last();
         }
         
         currentSlide.fadeOut(600).removeClass('active-slide');
@@ -44,7 +49,7 @@ var main = function() {
         currentDot.removeClass('active-dot');
         prevDot.addClass('active-dot');
         
-});
+    });
 
 };
 
